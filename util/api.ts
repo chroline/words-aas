@@ -7,7 +7,7 @@ const getRandomWord = (contents: string) => {
 };
 
 const getWordFile = async (filePath) => {
-  const contents = (
+  const contents = await (
     await fetch(
       (process.env.NODE_ENV === "production" ? "https://words-aas.vercel.app/db/" : "http://localhost:3000/db/") +
         filePath,
