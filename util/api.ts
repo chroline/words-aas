@@ -7,15 +7,18 @@ const getRandomWord = (contents: string) => {
 };
 
 const getWordFile = async (filePath) => {
-  const contents = await fetch(
-    (process.env.NODE_ENV === "production" ? "https://words-aas.next.sh/db/" : "http://localhost:3000/") + filePath,
-  );
+  const contents = (
+    await fetch(
+      (process.env.NODE_ENV === "production" ? "https://words-aas.vercel.app/db/" : "http://localhost:3000/db/") +
+        filePath,
+    )
+  ).text();
   return getRandomWord(contents.toString()) + " ";
 };
 
 const phraseGenerator = async (words) => {
   let phrase = "";
-  const allWordTypes = ["adjective", "adverb", "animal", "bodypart", "gerund", "noun", "pluralNoun", "verb"];
+  const allWordTypes = ["adjective", "adverb", "animal", "bodyPart", "gerund", "noun", "pluralNoun", "verb"];
   for (const word of words) {
     if (word === "") continue;
 
