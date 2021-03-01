@@ -1,17 +1,15 @@
 import "typeface-inter";
 import "typeface-crimson-pro";
-import "../styles/tailwind.css";
+import "../util/base.css";
 
 import { AppProps } from "next/app";
-import ThemeProvider from "../utils/Theme";
+import ThemeProvider from "../components/Theme";
 import DayNight from "../components/daynight";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider>
-      <div className={"absolute top-0 right-0 m-5"}>
-        <DayNight size={36} />
-      </div>
+      <DayNight size={36} />
       <Component {...pageProps} />
     </ThemeProvider>
   );

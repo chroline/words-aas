@@ -1,5 +1,5 @@
 import React, { createContext, ReactNode, useContext, useEffect } from "react";
-import { light, dark } from "../styles/colors";
+import { light, dark } from "../util/styles";
 import { AnimatePresence, motion } from "framer-motion";
 
 const defaultContextData = {
@@ -52,7 +52,7 @@ const ThemeProvider = ({ children }: { children: ReactNode }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className={"w-full h-full"}
+        style={{ width: "100%", height: "100%" }}
       >
         <ThemeContext.Provider
           value={{

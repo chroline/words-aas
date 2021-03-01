@@ -1,5 +1,3 @@
-export type Styles = { [key: string]: string[] };
-
 export interface Theme {
   background: string;
   tabColor: string;
@@ -10,31 +8,31 @@ export interface Theme {
 }
 
 export const light: Theme = {
-  background: "lightBg",
+  background: "#f6f6f9",
   tabColor: "#f6f6f9",
   main: "black",
   highlight: {
-    main: "indigo-500",
-    hover: "indigo-300",
+    main: "#3F51B5",
+    hover: "#7986CB",
     complement: "white",
   },
-  subtitle: "blue-gray-500",
+  subtitle: "#607D8B",
   altBtn: {
-    hover: "blue-gray-300",
+    hover: "#BDBDBD",
   },
 };
 
 export const dark: Theme = {
-  background: "gray-900",
+  background: "#212121",
   tabColor: "#212121",
   main: "white",
   highlight: {
-    main: "indigo-500",
-    hover: "indigo-300",
+    main: "#3F51B5",
+    hover: "#7986CB",
     complement: "white",
   },
-  subtitle: "blue-gray-50",
+  subtitle: "#ECEFF1",
   altBtn: {
-    hover: "blue-gray-400",
+    hover: "#616161",
   },
 };
