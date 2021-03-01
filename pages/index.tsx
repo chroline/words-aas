@@ -11,19 +11,15 @@ export default function Index() {
         <meta name="theme-color" content={theme.tabColor} />
       </Head>
       <div className={"wrapper"}>
-        <div className={"content"}>
-          <div className={"inner"}>
-            <h1>
-              <span>Words</span> as a Service
-            </h1>
-            <p className={"subtitle"}>A simple API to generate unique randomized words & phrases.</p>
-            <div className={"buttons"}>
-              <a href={"https://github.com/chroline/words-aas"}>View on GitHub</a>
-            </div>
-          </div>
+        <h1>
+          <span>Words</span> as a Service
+        </h1>
+        <p className={"subtitle"}>A simple API to generate unique randomized words & phrases.</p>
+        <div className={"buttons"}>
+          <a href={"https://github.com/chroline/words-aas"}>View on GitHub</a>
         </div>
-        <p className={"credits"}>made with ❤️ by Cole Gawin</p>
       </div>
+      <p className={"credits"}>made with ❤️ by Cole Gawin</p>
       <style jsx global>{`
         html,
         body,
@@ -48,20 +44,8 @@ export default function Index() {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-        }
-
-        .content {
-          flex: 1;
-          display: flex;
-          align-items: center;
-          justify-content: center;
 
           padding: 0 1.5rem;
-        }
-
-        .inner {
-          display: inline-block;
-          text-align: center;
         }
 
         h1 {
@@ -131,6 +115,12 @@ export default function Index() {
         }
 
         .credits {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+
+          text-align: center;
           color: ${theme.subtitle};
           font-size: 1rem;
 
