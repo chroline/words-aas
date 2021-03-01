@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { phraseResolver } from "./index";
+import { phraseResolver } from "../../util/api";
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   const { slug } = req.query as { slug: string };
