@@ -44,6 +44,7 @@ export default function Index() {
           flex-direction: column;
           align-items: center;
           justify-content: center;
+          text-align: center;
 
           padding: 0 1.5rem;
         }
