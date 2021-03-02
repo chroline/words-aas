@@ -1,6 +1,6 @@
 <div align="center">
 
-[![Words as a Service](https://raw.githubusercontent.com/chroline/words-aas/main/title.svg)
+![Words as a Service](https://raw.githubusercontent.com/chroline/words-aas/main/title.svg)
 
 [![Hosted on Zeit Now](https://badgen.net/badge/%E2%96%B2%20Hosted%20on/Zeit%20Now/black)](https://now.sh)
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
