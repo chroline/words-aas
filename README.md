@@ -4,7 +4,7 @@
 
 [![Hosted on Zeit Now](https://badgen.net/badge/%E2%96%B2%20Hosted%20on/Zeit%20Now/black)](https://now.sh)
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
-[![Known Vulnerabilities](https://snyk.io/test/github/chroline/words-aas/badge.svg)](https://snyk.io/test/github/chroline/words-aas)
+![Monitored with Dependabot](https://badgen.net/dependabot/chroline/words-aas?icon=dependabot)
 [![dependencies Status](https://david-dm.org/chroline/words-aas/status.svg)](https://david-dm.org/chroline/words-aas)
 [![devDependencies Status](https://david-dm.org/chroline/words-aas/dev-status.svg)](https://david-dm.org/chroline/words-aas?type=dev)
 
