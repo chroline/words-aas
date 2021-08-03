@@ -1,15 +1,19 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import NextCors from "nextjs-cors";
 import { phraseResolver } from "../../util/api";
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
+  await NextCors(req, res, {
+    methods: ["GET", "POST"],
+    origin: "*",
+    optionsSuccessStatus: 200,
+  });
+
   const { query } = req.body as { query: string };
-
-  const words = query
-    .split("$")
-    .map((w) => w.split(/[^a-z]/i))
-    .flat();
-  console.log(words);
-
-  const phrase = await phraseResolver(words);
-  res.json(phrase);
+  try {
+    const phrase = await phraseResolver(query);
+    res.json({ phrase });
+  } catch (e) {
+    res.status(400).json({ error: (e as Error).message });
+  }
 };
