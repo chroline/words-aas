@@ -7,7 +7,6 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>words-aas</title>
         <meta name="theme-color" content={theme.tabColor} />
       </Head>
       <div className={"wrapper"}>
