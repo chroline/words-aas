@@ -3,7 +3,7 @@
 ![Words as a Service](https://raw.githubusercontent.com/chroline/words-aas/main/title.svg)
 
 [![Hosted on Vercel](https://badgen.net/badge/%E2%96%B2%20Hosted%20on/Vercel/black)](https://vercel.com)
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![dependencies Status](https://david-dm.org/chroline/words-aas/status.svg)](https://david-dm.org/chroline/words-aas)
 [![devDependencies Status](https://david-dm.org/chroline/words-aas/dev-status.svg)](https://david-dm.org/chroline/words-aas?type=dev)
 
