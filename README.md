@@ -48,7 +48,7 @@ Make a `GET` request to [https://words-aas.now.sh/api/PHRASE](https://words-aas.
 
 ```shell script
 curl --request GET \
-  --url 'https://words-aas.now.sh/api/the,$pluralNoun,is,gerund'
+  --url 'https://words-aas.now.sh/api/the $pluralNoun is $gerund'
 ```
 
 ### Query API
