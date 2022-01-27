@@ -44,7 +44,7 @@ Make a `GET` request to [https://words-aas.now.sh/api/PHRASE](https://words-aas.
 
 ```shell script
 curl --request GET \
-  --url 'https://words-aas.now.sh/api/the $pluralNoun is $gerund'
+  --url 'https://words-aas.vercel.app/api/the%20$pluralNoun%20is%20$gerund'
 ```
 
 ### Query API
@@ -53,7 +53,7 @@ or, `POST` to [https://words-aas.now.sh/api/](https://words-aas.now.sh/api/) wit
 
 ```shell script
 curl --request POST \
-    --url https://words-aas.now.sh/api/ \
+    --url https://words-aas.vercel.app/api/ \
     --header 'content-type: application/json' \
     --data '{
   	  "query": "the $pluralNoun is $gerund"
